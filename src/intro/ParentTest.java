@@ -13,7 +13,7 @@ public class ParentTest {
 	static By searchButtonLocator = By.id("navbar-submit-button");
 
 	public static void setUp() {
-		//System.setProperty("webdriver.chrome.driver", "C:\\automation\\drivers\\chromedriver.exe");  //propiedad explorador chrome		
+		System.setProperty("webdriver.chrome.driver", "C:\\libs\\chromedriver.exe");  //propiedad explorador chrome
 		driver = new ChromeDriver();  //driver de chrome
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.navigate().to("http:\\imdb.com");//navegar a la pagina de IMDB.com
