@@ -13,25 +13,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-public class TelcelOmar
+public class TelcelMethods
 {
 
     static WebDriver driver;
     static WebDriverWait wait;
-
-    public static void main(String[] args)
-    {
-        navegarSitio("https://www.telcel.com");
-        verificarLandingPage();
-        listarTelefonos();
-        seleccionarEstado("Jalisco");
-        verificarPaginaResultados();
-        Celular primerCelular;
-        primerCelular = capturarDatosCelular(1);
-        seleccionarCelular(1);
-        validarDatosCelular(primerCelular);
-    }
-
 
     private static void navegarSitio(String url)
     {
